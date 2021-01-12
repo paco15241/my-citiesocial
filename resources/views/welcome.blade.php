@@ -6,10 +6,14 @@
 
         <title>Laravel</title>
 
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js')}}"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
@@ -81,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <i class="fab fa-laravel"></i> Laravel
                 </div>
 
                 <div class="links">
@@ -94,6 +98,15 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+                <div x-data="{ open: false }">
+                    <button x-on:click="open = !open">Click me</button>
+                    
+                    <div x-show="open">
+                        Hello there
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
