@@ -21275,10 +21275,38 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/frontend.js":
+/*!**********************************!*\
+  !*** ./resources/js/frontend.js ***!
+  \**********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _frontend_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./frontend/app */ "./resources/js/frontend/app.js");
+/* harmony import */ var _frontend_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_frontend_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shared_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/app */ "./resources/js/shared/app.js");
+
+
+
+/***/ }),
+
+/***/ "./resources/js/frontend/app.js":
+/*!**************************************!*\
+  !*** ./resources/js/frontend/app.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./resources/js/shared/app.js":
+/*!************************************!*\
+  !*** ./resources/js/shared/app.js ***!
+  \************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21286,17 +21314,17 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_0__);
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // AlpineJS
+__webpack_require__(/*! ./bootstrap */ "./resources/js/shared/bootstrap.js"); // AlpineJS
 
 
 
 
 /***/ }),
 
-/***/ "./resources/js/bootstrap.js":
-/*!***********************************!*\
-  !*** ./resources/js/bootstrap.js ***!
-  \***********************************/
+/***/ "./resources/js/shared/bootstrap.js":
+/*!******************************************!*\
+  !*** ./resources/js/shared/bootstrap.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21325,10 +21353,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/backend.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/backend.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/frontend.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/frontend.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21337,14 +21376,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** multi ./resources/js/frontend.js ./resources/sass/frontend.scss ./resources/sass/backend.scss ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\my_citiesocial\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\my_citiesocial\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\my-citiesocial\resources\js\frontend.js */"./resources/js/frontend.js");
+__webpack_require__(/*! C:\laragon\www\my-citiesocial\resources\sass\frontend.scss */"./resources/sass/frontend.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\my-citiesocial\resources\sass\backend.scss */"./resources/sass/backend.scss");
 
 
 /***/ })
