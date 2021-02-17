@@ -14,6 +14,9 @@
 
 </head>
 <body>
+    @include('shared.frontend.navbar')
+    @include('shared.frontend.top_menu')
     @yield('content')
+    @include('shared.frontend.footer')
 </body>
 </html>

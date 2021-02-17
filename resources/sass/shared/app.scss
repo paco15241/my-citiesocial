@@ -5,3 +5,9 @@
 
 // Font-Awesome
 @import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+#menu-toggle:checked ~ .menu {
+    display: flex;
+    margin-bottom: 6px;
+}

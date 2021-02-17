@@ -37309,6 +37309,11 @@ video {
           animation: bounce 1s infinite;
 }
 
+#menu-toggle:checked ~ .menu {
+  display: flex;
+  margin-bottom: 6px;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
