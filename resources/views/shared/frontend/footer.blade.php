@@ -1,6 +1,5 @@
-
-<footer class="bg-gray-100 w-full">
-    <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
+<footer class="bg-white w-full">
+    <div class="container mx-auto w-full flex flex-wrap justify-between">
         <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
             <h3 class="font-bold text-xl text-black text-bold mb-2">關於我們</h3>
             <li>
