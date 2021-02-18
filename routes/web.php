@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'ProductsController@index');
+
+Route::resource('products', ProductsController::class)->only([
+    'index', 'show'
+]);
