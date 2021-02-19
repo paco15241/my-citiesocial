@@ -12,3 +12,7 @@
     display: flex;
     margin-bottom: 6px;
 }
+
+#userbox:checked ~ #userboxmenu {
+    opacity: 1;
+}

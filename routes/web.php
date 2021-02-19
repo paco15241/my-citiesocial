@@ -11,8 +11,14 @@
 |
 */
 
-Route::get('/', 'ProductsController@index');
+Route::get('/', 'ProductsController@index')->name('index');
 
 Route::resource('products', ProductsController::class)->only([
     'index', 'show'
 ]);
+
+Route::group(['prefix' => 'users'], function(){
+    Auth::routes();
+});
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -6139,6 +6139,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
+/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -6581,15 +6583,18 @@ textarea {
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
 input::placeholder,
 textarea::placeholder {
+  opacity: 1;
   color: #9ca3af;
 }
 
@@ -16921,6 +16926,10 @@ video {
 
 .cursor-move{
   cursor: move;
+}
+
+.cursor-help{
+  cursor: help;
 }
 
 .cursor-not-allowed{
@@ -37314,6 +37323,10 @@ video {
   margin-bottom: 6px;
 }
 
+#userbox:checked ~ #userboxmenu {
+  opacity: 1;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -47549,6 +47562,10 @@ video {
 
   .sm\:cursor-move{
     cursor: move;
+  }
+
+  .sm\:cursor-help{
+    cursor: help;
   }
 
   .sm\:cursor-not-allowed{
@@ -78096,6 +78113,10 @@ video {
     cursor: move;
   }
 
+  .md\:cursor-help{
+    cursor: help;
+  }
+
   .md\:cursor-not-allowed{
     cursor: not-allowed;
   }
@@ -108639,6 +108660,10 @@ video {
 
   .lg\:cursor-move{
     cursor: move;
+  }
+
+  .lg\:cursor-help{
+    cursor: help;
   }
 
   .lg\:cursor-not-allowed{
@@ -139186,6 +139211,10 @@ video {
     cursor: move;
   }
 
+  .xl\:cursor-help{
+    cursor: help;
+  }
+
   .xl\:cursor-not-allowed{
     cursor: not-allowed;
   }
@@ -169729,6 +169758,10 @@ video {
 
   .\32xl\:cursor-move{
     cursor: move;
+  }
+
+  .\32xl\:cursor-help{
+    cursor: help;
   }
 
   .\32xl\:cursor-not-allowed{

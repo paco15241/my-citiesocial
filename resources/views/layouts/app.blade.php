@@ -14,6 +14,7 @@
 
 </head>
 <body>
+    @include('shared.flash')
     @include('shared.frontend.navbar')
     @include('shared.frontend.top_menu')
     @yield('content')
