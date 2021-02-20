@@ -3,9 +3,9 @@
 @section('content')
 <section class="container mx-auto my-8">
     <h1 class="text-3xl font-bold">{{ __('Register') }}</h1>
-    
+
     <div class="flex">
-        <div class="w-3/12 p-2">
+        <div class="w-6/12 lg:w-3/12 p-2">
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
@@ -51,10 +51,13 @@
                     <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                         {{ __('Register') }}
                     </button>
+
+                    <br />
+                    <a class="font-light" href="{{ url('users/login/google') }}">使用 Google 登入</a>
                 </div>
             </form>
         </div>
-        <div class="w-9/12 p-2">
+        <div class="w-6/12 lg:w-9/12 p-2">
             <img src="{{ asset('images/cats/cat-register.jpg') }}" alt="">
         </div>
     </div>

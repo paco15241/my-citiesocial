@@ -4,10 +4,10 @@
 <section class="container mx-auto my-8">
     <h1 class="text-3xl font-bold text-right">{{ __('Login') }}</h1>
     <div class="flex">
-        <div class="w-9/12 p-2">
+        <div class="w-6/12 lg:w-9/12 p-2">
             <img src="{{ asset('images/cats/cat-login.jpg') }}" alt="">
         </div>
-        <div class="w-3/12 p-2">
+        <div class="w-6/12 lg:w-3/12 p-2">
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
@@ -49,11 +49,16 @@
                             {{ __('Login') }}
                         </button>
 
+
                         @if (Route::has('password.request'))
+                            <br />
                             <a class="font-light" href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
                             </a>
                         @endif
+
+                        <br />
+                        <a class="font-light" href="{{ url('users/login/google') }}">使用 Google 登入</a>
                     </div>
                 </div>
             </form>

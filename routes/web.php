@@ -20,5 +20,7 @@ Route::resource('products', ProductsController::class)->only([
 Route::group(['prefix' => 'users'], function(){
     Auth::routes();
 });
+Route::get('users/login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('users/login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('/home', 'HomeController@index')->name('home');
